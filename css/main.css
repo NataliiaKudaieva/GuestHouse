@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+[class*=__container] {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: #52503b;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  padding: 10px 0;
+}
+
+.menu__list {
+  display: flex;
+}
+.menu__item {
+  position: relative;
+}
+.menu__item::before {
+  background: hsl(45deg, 100%, 70%);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+.menu__item::before:hover {
+  transform: scaleX(1);
+}
+.menu__link {
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  margin-right: 20px;
+  position: relative;
+}
+
+.btn {
+  width: 117px;
+  height: 42px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+.btn--white {
+  color: #52503b;
+  transition: all 0.3s;
+}
+.btn--white:hover {
+  color: #fff;
+  background-color: #52503b;
+  border: 2px solid #e08631;
+}/*# sourceMappingURL=main.css.map */
