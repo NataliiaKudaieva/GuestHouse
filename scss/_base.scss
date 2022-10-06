@@ -1,0 +1,44 @@
+///reset
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+[class*="__container"] {
+  width: 1200px; ///content will be 1170px
+  margin: 0 auto;
+  padding: 0 15px;
+} ///applies to all classes who have __container in the names
