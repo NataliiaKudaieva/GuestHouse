@@ -1,0 +1,73 @@
+.intro {
+  width: 100%;
+  background-image: url("/src/img/header_photo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__block {
+    height: 715px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+  }
+  &__content {
+    align-self: center;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  &__logo {
+    max-width: 256px;
+    max-height: 90px;
+  }
+  &__main--heading {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+    text-align: center;
+    color: #fff;
+  }
+  &__secondary--heading {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__icon-mouse {
+    width: 60px;
+    height: 60px;
+    color: $dark-grey;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .intro {
+    width: 100%;
+    &__content {
+      padding: 0 20px;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .intro {
+    &__block {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    &__main--heading {
+      font-size: 35px;
+      line-height: 40px;
+    }
+  }
+}
