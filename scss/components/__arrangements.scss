@@ -1,6 +1,12 @@
 .arrangements {
   background-color: $beige;
+  &__block {
+    top: 15%;
+    left: 50%;
+    @include orangeBlock;
+  }
   &__container {
+    position: relative;
     min-height: 553px;
     display: flex;
     flex-direction: column;
