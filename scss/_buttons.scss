@@ -13,4 +13,14 @@
       border: 2px solid $dull-orange;
     }
   }
+  &--dark {
+    color: #fff;
+    background-color: $dark-grey;
+    transition: all 0.3s;
+    &:hover {
+      background-color: #fff;
+      border: 2px solid $dull-orange;
+      color: $dark-grey;
+    }
+  }
 }
