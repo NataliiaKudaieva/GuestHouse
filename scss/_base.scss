@@ -46,7 +46,6 @@ select {
 /////mixins
 @mixin orangeBlock {
   transform: translate(-50%, -50%);
-  left: 50%;
   height: 8px;
   width: 42px;
   background-color: $dull-orange;
