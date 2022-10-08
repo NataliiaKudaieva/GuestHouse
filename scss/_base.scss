@@ -45,6 +45,7 @@ select {
 
 /////mixins
 @mixin orangeBlock {
+  position: absolute;
   transform: translate(-50%, -50%);
   height: 8px;
   width: 42px;
