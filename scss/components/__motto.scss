@@ -1,7 +1,14 @@
 .motto {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  &__block {
+    @include orangeBlock;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+  }
   &__container {
     min-height: 568px;
     display: flex;
