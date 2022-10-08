@@ -5,12 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guest House</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
@@ -72,6 +69,7 @@
 
         <div class="history">
           <div class="history__container">
+            <div class="history__block"></div>
             <div class="history__content">
               <div class="history__main-block">
                 <p class="history__paragraph">
@@ -91,12 +89,53 @@
                   us vi the contact page if you have any questions around your
                   stay.
                 </p>
-                <button class="history__btn btn">Book now</button>
+                <button class="history__btn btn btn--dark">Book now</button>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="motto">
+            <div class="motto__block"></div>
+            <div class="motto__container">
+            <h3 class="motto__heading">
+              The Guest House is the perfect weekend getaway cabin.
+            </h3>
+          </div>
+            <img src="./src/img/kitchen.png" alt="" class="motto__img" />
+        </div>
+        </div>
       </div>
+
+      <section class="arrangements">
+        <div class="arrangements__container">
+          <div class="arrangements__main">
+            <div class="arrangements__block"></div>
+            <h4 class="arrangements__heading">Sleeping arrangements.</h4>
+            <p class="arrangements__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur.
+            </p>
+          </div>
+          <div class="arrangements__content">
+            <div class="arrangements__item">
+              <object data="./src/icons/bed.svg" type="image/svg+xml" class="arrangements__icon arrangements__icon--bed"></object>
+              <span class="arrangements__icon-name">Beds</span>
+              <p class="arrangements__description">The cabin is equipped with 12 beds, 4 of which are in bunk. The rent includes linens for all beds.</p>
+            </div>
+            <div class="arrangements__item">
+              <object data="./src/icons/door.svg" type="image/svg+xml" class="arrangements__icon arrangements__icon--door"></object>
+              <span class="arrangements__icon-name">Bedrooms</span>
+              <p class="arrangements__description">Spread out over two floors, the cabin offers 4 bedrooms. Ranging from 2 to 4 beds per room.</p>
+            </div>
+            <div class="arrangements__item">
+              <object data="./src/icons/bath.svg" type="image/svg+xml" class="arrangements__icon arrangements__icon--bath"></object>
+              <span class="arrangements__icon-name">Bathrooms</span>
+              <p class="arrangements__description">The cabin has three bathrooms, all equipped with showers and one with a bath tub.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
     </main>
   </body>
 </html>
