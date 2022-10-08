@@ -42,3 +42,10 @@ select {
   margin: 0 auto;
   padding: 0 15px;
 } ///applies to all classes who have __container in the names
+
+/////mixins
+@mixin orangeBlock {
+  height: 8px;
+  width: 42px;
+  background-color: $dull-orange;
+}
