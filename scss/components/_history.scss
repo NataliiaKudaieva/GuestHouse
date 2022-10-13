@@ -8,7 +8,7 @@
   }
   &__container {
     position: relative;
-    height: 450px;
+    min-height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,7 +67,7 @@
   }
 }
 
-@media (max-width: 465px) {
+@media (max-width: 510px) {
   .history {
     &__block {
       display: none;
