@@ -308,7 +308,16 @@
           </div>
 
           <div class="guests__content">
-            <div class="guests__item">
+            <div class="guests__input">
+              <input
+                id="guests__btn--1"
+                type="radio"
+                name="guests__radio"
+                checked
+              />
+              <input id="guests__btn--2" type="radio" name="guests__radio" />
+            </div>
+            <div class="guests__item" id="guests__item--1">
               <div class="guests__stars">
                 <object
                   data="./src/icons/star.svg"
@@ -350,7 +359,7 @@
               <span class="guests__author">Nate Davidsson</span>
             </div>
 
-            <div class="guests__item">
+            <div class="guests__item" id="guests__item--2">
               <div class="guests__stars">
                 <object
                   data="./src/icons/star.svg"
@@ -389,7 +398,7 @@
               <span class="guests__author">Laura Paulie</span>
             </div>
 
-            <div class="guests__item">
+            <div class="guests__item" id="guests__item--3">
               <div class="guests__stars">
                 <object
                   data="./src/icons/star.svg"
@@ -427,8 +436,8 @@
           </div>
 
           <div class="guests__select">
-            <div class="guests__circle"></div>
-            <div class="guests__circle"></div>
+            <label for="guests__btn--1" class="guests__label"></label>
+            <label for="guests__btn--2" class="guests__label"></label>
           </div>
         </div>
       </section>

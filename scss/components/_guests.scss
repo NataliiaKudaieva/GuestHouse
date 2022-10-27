@@ -14,7 +14,10 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    width: 1180px;
+    overflow: hidden;
   }
+
   &__header {
     padding: 0 15px;
     max-width: 615px;
@@ -25,7 +28,10 @@
     padding: 15px 0;
   }
   &__content {
+    width: 100%;
+    overflow: hidden;
     display: flex;
+    flex-wrap: nowrap;
   }
   &__comment {
     font-size: 18px;
@@ -35,11 +41,16 @@
     color: $dark-grey-1;
     background-color: #fff;
     margin-right: 20px;
-    min-height: auto;
+    min-height: 270px;
     padding: 20px 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 1 0 50%;
+    transition: all ease 0.5s;
+    position: relative;
+    width: 33.333%;
+    animation: sliderGuests 15s ease;
   }
 
   &__review {
@@ -63,12 +74,51 @@
     display: flex;
     align-self: flex-end;
   }
-  &__circle {
+  &__label {
+    display: block;
+    position: relative;
     margin-right: 5px;
     border: 2px solid $dark-grey;
     border-radius: 30px;
     height: 60px;
     width: 60px;
     border-color: $dark-grey;
+    cursor: pointer;
+  }
+  &__input {
+    position: relative;
+  }
+}
+
+#guests__btn--1,
+#guests__btn--2 {
+  opacity: 0;
+  left: 50%;
+  bottom: 50%;
+}
+
+#guests__btn--1:checked ~ #guests__item--1 {
+  margin-left: 0;
+}
+
+#guests__btn--2:checked ~ #guests__item--1 {
+  margin-left: -15%;
+}
+
+@keyframes sliderGuests {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: -15%;
+  }
+  50% {
+    left: -35%;
+  }
+  75% {
+    left: -50%;
+  }
+  100% {
+    left: 0;
   }
 }
