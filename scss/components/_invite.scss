@@ -1,0 +1,50 @@
+.invite {
+  min-height: 866px;
+  &__img {
+    max-height: 600px;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 366px;
+  }
+
+  &__header {
+    padding: 0 10px;
+  }
+  &__block {
+    @include orangeBlock;
+    left: 50px;
+    top: 110px;
+  }
+
+  &__span {
+    line-height: 20px;
+    color: $dark-grey;
+  }
+
+  &__content {
+    max-width: 620px;
+    min-height: 166px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+  }
+  &__item {
+    flex: 0 0 50%;
+    padding: 5px 10px;
+    display: flex;
+  }
+}
