@@ -1,0 +1,84 @@
+.arrangements {
+  position: relative;
+  background-color: $beige;
+  &__block {
+    top: 15%;
+    left: 50%;
+    @include orangeBlock;
+  }
+  &__container {
+    min-height: 553px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $dark-grey;
+    font-weight: 300;
+  }
+  &__main {
+    max-width: 614px;
+    margin-bottom: 23px;
+  }
+  &__heading {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  &__paragraph {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 14px 23px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  &__icon {
+    width: 46px;
+    height: 64px;
+    align-self: center;
+  }
+  &__icon-name {
+    padding: 10px 5px;
+  }
+  &__description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .arrangements {
+    &__container {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 669px) {
+  .arrangements {
+    position: relative;
+    &__main {
+      margin: 20px 0;
+      padding: 20px 0;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+    &__block {
+      top: 4%;
+    }
+    &__heading {
+      margin-top: 10px;
+    }
+  }
+}
