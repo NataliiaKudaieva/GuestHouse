@@ -8,27 +8,31 @@
   &__container {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     min-height: 366px;
   }
 
   &__header {
-    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
   }
   &__block {
     @include orangeBlock;
-    left: 50px;
+    left: 35px;
     top: 110px;
   }
-
+  &__heading {
+    margin-bottom: 12px;
+  }
   &__span {
     line-height: 20px;
     color: $dark-grey;
   }
 
   &__content {
-    max-width: 620px;
+    max-width: 600px;
     min-height: 166px;
     display: flex;
     flex-wrap: wrap;
@@ -46,5 +50,70 @@
     flex: 0 0 50%;
     padding: 5px 10px;
     display: flex;
+    color: $dark-grey;
+  }
+}
+
+@media (max-width: 1200px) {
+  .invite {
+    &__container {
+      max-width: 100%;
+      padding: 10px 30px;
+    }
+
+    &__block {
+      left: 50px;
+      top: 25%;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .invite {
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item {
+      padding: 15px 0;
+      width: 100%;
+    }
+
+    &__icon {
+      margin-right: 20px;
+    }
+
+    &__paragraph {
+      padding-right: 30px;
+    }
+  }
+}
+
+@media (max-width: 510px) {
+  .invite {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      height: max-content;
+    }
+
+    &__block {
+      top: 5%;
+      left: 50%;
+    }
+    &__header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 220px;
+    }
+    &__heading {
+      font-size: 30px;
+    }
+    &__paragraph {
+      padding: 0;
+      text-align: center;
+    }
   }
 }
