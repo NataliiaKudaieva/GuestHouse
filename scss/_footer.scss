@@ -1,0 +1,100 @@
+.footer {
+  background-color: $dark-grey;
+  color: #fff;
+  &__container {
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    height: auto;
+    min-height: 608px;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    font-size: 14px;
+    min-height: 200px;
+  }
+  &__list {
+    margin-top: 11px;
+  }
+  &__items {
+    margin-bottom: 10px;
+  }
+  &__link:link,
+  &__link:visited {
+    color: #fff;
+  }
+  &__link {
+    transition: all 0.3s;
+  }
+  &__link:hover {
+    color: $dull-orange;
+  }
+  &__nav {
+    flex: 1 0 280px;
+  }
+  &__social {
+    flex: 1 0 280px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+  }
+  &__span {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 20px;
+    margin-bottom: 11px;
+  }
+  &__group--icon {
+    padding: 21px 0;
+  }
+  &__icon {
+    margin-right: 20px;
+  }
+  &__link--social {
+    cursor: pointer;
+  }
+  &__letter {
+    flex: auto;
+  }
+  &__paragraph {
+    padding: 20px 0;
+  }
+  &__input {
+    width: 576px;
+    overflow: hidden;
+    height: 52px;
+    position: relative;
+  }
+  &__btn {
+    position: absolute;
+    left: 83%;
+    background-color: $dark-grey;
+    color: #fff;
+    width: 70px;
+    height: 40px;
+  }
+  &__logo {
+    width: 200px;
+    height: 70px;
+    object-fit: cover;
+  }
+  &__reserved {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__website--name {
+    padding: 20px 0;
+  }
+}
