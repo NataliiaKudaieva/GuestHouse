@@ -40,6 +40,7 @@
   .history {
     &__container {
       width: 100%;
+      margin-bottom: 20px;
     }
     &__main-block,
     &__booking-block {
@@ -67,7 +68,7 @@
   }
 }
 
-@media (max-width: 510px) {
+@media (max-width: 530px) {
   .history {
     &__block {
       display: none;
@@ -84,6 +85,9 @@
     &__paragraph {
       text-align: center;
       font-size: 17px;
+    }
+    &__paragraph::first-line {
+      font-weight: 700;
     }
     &__btn {
       align-self: center;
