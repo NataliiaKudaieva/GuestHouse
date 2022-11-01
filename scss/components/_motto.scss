@@ -41,16 +41,8 @@
 @media (max-width: 940px) {
   .motto {
     &__heading {
-      font-size: 60px;
+      font-size: 45px;
       line-height: 60px;
-    }
-  }
-}
-
-@media (max-width: 348px) {
-  .motto {
-    &__heading {
-      font-size: 50px;
     }
   }
 }
