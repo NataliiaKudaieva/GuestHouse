@@ -58,6 +58,9 @@
     color: $dark-grey;
     line-height: 20px;
   }
+  &__icon {
+    display: inline;
+  }
   &__author {
     line-height: 20px;
     position: relative;
