@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="wrapper">
         <div class="header__container">
           <a href="" class="header__logo">
@@ -70,7 +70,7 @@
           </div>
         </section>
 
-        <div class="history">
+        <div class="history" id="history">
           <div class="history__container">
             <div class="history__block"></div>
             <div class="history__content">
@@ -109,7 +109,7 @@
         </div>
       </div>
 
-      <section class="arrangements">
+      <section class="arrangements" id="arrangements">
         <div class="arrangements__container">
           <div class="arrangements__main">
             <div class="arrangements__block"></div>
@@ -124,11 +124,11 @@
           </div>
           <div class="arrangements__content">
             <div class="arrangements__item">
-              <object
-                data="./src/icons/bed.svg"
-                type="image/svg+xml"
+              <img
+                src="./src/icons/bed.svg"
+                alt="bed icon"
                 class="arrangements__icon arrangements__icon--bed"
-              ></object>
+              />
               <span class="arrangements__icon-name">Beds</span>
               <p class="arrangements__description">
                 The cabin is equipped with 12 beds, 4 of which are in bunk. The
@@ -136,11 +136,11 @@
               </p>
             </div>
             <div class="arrangements__item">
-              <object
-                data="./src/icons/door.svg"
-                type="image/svg+xml"
+              <img
+                src="./src/icons/door.svg"
+                alt="door icon"
                 class="arrangements__icon arrangements__icon--door"
-              ></object>
+              />
               <span class="arrangements__icon-name">Bedrooms</span>
               <p class="arrangements__description">
                 Spread out over two floors, the cabin offers 4 bedrooms. Ranging
@@ -148,11 +148,11 @@
               </p>
             </div>
             <div class="arrangements__item">
-              <object
-                data="./src/icons/bath.svg"
-                type="image/svg+xml"
+              <img
+                src="./src/icons/bath.svg"
+                alt="bath icon"
                 class="arrangements__icon arrangements__icon--bath"
-              ></object>
+              />
               <span class="arrangements__icon-name">Bathrooms</span>
               <p class="arrangements__description">
                 The cabin has three bathrooms, all equipped with showers and one
@@ -163,7 +163,7 @@
         </div>
       </section>
 
-      <section class="activities">
+      <section class="activities" id="activities">
         <div class="activities__container">
           <div class="activities__header">
             <div class="activities__block"></div>
@@ -179,11 +179,11 @@
 
           <div class="activities__content">
             <div class="activities__item">
-              <object
-                data="./src/icons/kitchen.svg"
-                type="image/svg+xml"
+              <img
+                src="./src/icons/kitchen.svg"
+                alt="kitchen icon"
                 class="activities__icon activities__icon--kitchen"
-              ></object>
+              />
               <div class="activities__name">
                 <span class="activities__span">Modern Kitchen Appliances</span>
                 <p class="activities__description">
@@ -193,11 +193,11 @@
             </div>
 
             <div class="activities__item">
-              <object
-                data="./src/icons/air-conditioner.svg"
-                type="image/svg+xml"
+              <img
+                src="./src/icons/air-conditioner.svg"
+                alt="conditioner icon"
                 class="activities__icon activities__icon--conditioner"
-              ></object>
+              />
               <div class="activities__name">
                 <span class="activities__span">Air conditioner</span>
                 <p class="activities__description">
@@ -207,11 +207,12 @@
             </div>
 
             <div class="activities__item">
-              <object
-                data="./src/icons/forest.svg"
-                type="image/svg+xml"
+              <img
+                src="./src/icons/forest.svg"
+                alt="forest icon"
                 class="activities__icon activities__icon--forest"
-              ></object>
+              />
+
               <div class="activities__name">
                 <span class="activities__span">Outdoor paths</span>
                 <p class="activities__description">
@@ -221,11 +222,11 @@
             </div>
 
             <div class="activities__item">
-              <object
-                data="./src/icons/briefcase.svg"
-                type="image/svg+xml"
-                class="activities__icon activities__icon--kitchen"
-              ></object>
+              <img
+                src="./src/icons/briefcase.svg"
+                alt="briefcase icon"
+                class="activities__icon activities__icon--briefcase"
+              />
               <div class="activities__name">
                 <span class="activities__span">Storage Solutions</span>
                 <p class="activities__description">
@@ -236,11 +237,11 @@
             </div>
 
             <div class="activities__item">
-              <object
-                data="./src/icons/Coffee-Maker-Icon.svg"
-                type="image/svg+xml"
+              <img
+                src="./src/icons/Coffee-Maker-Icon.svg"
+                alt="coffee icon"
                 class="activities__icon activities__icon--kitchen"
-              ></object>
+              />
               <div class="activities__name">
                 <span class="activities__span">Coffee Maker</span>
                 <p class="activities__description">
@@ -251,11 +252,11 @@
             </div>
 
             <div class="activities__item">
-              <object
-                data="./src/icons/Glass-Icon.svg"
-                type="image/svg+xml"
-                class="activities__icon activities__icon--kitchen"
-              ></object>
+              <img
+                src="./src/icons/Glass-Icon.svg"
+                alt="glass icon"
+                class="activities__icon activities__icon--glass"
+              />
               <div class="activities__name">
                 <span class="activities__span">Cutlery Selection</span>
                 <p class="activities__description">
@@ -265,11 +266,7 @@
             </div>
 
             <div class="activities__item">
-              <object
-                data="./src/icons/mountain.svg"
-                type="image/svg+xml"
-                class="activities__icon activities__icon--kitchen"
-              ></object>
+              <img src="./src/icons/mountain.svg" alt="mountain icon" />
               <div class="activities__name">
                 <span class="activities__span">Natural Scenery</span>
                 <p class="activities__description">
@@ -279,11 +276,11 @@
             </div>
 
             <div class="activities__item">
-              <object
-                data="./src/icons/pizza.svg"
-                type="image/svg+xml"
-                class="activities__icon activities__icon--kitchen"
-              ></object>
+              <img
+                src="./src/icons/pizza.svg"
+                alt="pizza icon"
+                class="activities__icon activities__icon--pizza"
+              />
               <div class="activities__name">
                 <span class="activities__span">Take-away Options</span>
                 <p class="activities__description">
@@ -296,7 +293,7 @@
         </div>
       </section>
 
-      <section class="guests">
+      <section class="guests" id="guests">
         <div class="guests__container">
           <div class="guests__header">
             <div class="guests__block"></div>
@@ -319,31 +316,31 @@
             </div>
             <div class="guests__item" id="guests__item--1">
               <div class="guests__stars">
-                <object
-                  data="./src/icons/star.svg"
-                  type="image/svg+xml"
+                <img
+                  src="./src/icons/star.svg"
+                  alt="star icon"
                   class="guests__icon"
-                ></object>
-                <object
-                  data="./src/icons/star.svg"
-                  type="image/svg+xml"
+                />
+                <img
+                  src="./src/icons/star.svg"
+                  alt="star icon"
                   class="guests__icon"
-                ></object>
-                <object
-                  data="./src/icons/star.svg"
-                  type="image/svg+xml"
+                />
+                <img
+                  src="./src/icons/star.svg"
+                  alt="star icon"
                   class="guests__icon"
-                ></object>
-                <object
-                  data="./src/icons/star.svg"
-                  type="image/svg+xml"
+                />
+                <img
+                  src="./src/icons/star.svg"
+                  alt="star icon"
                   class="guests__icon"
-                ></object>
-                <object
-                  data="./src/icons/star.svg"
-                  type="image/svg+xml"
+                />
+                <img
+                  src="./src/icons/star.svg"
+                  alt="star icon"
                   class="guests__icon"
-                ></object>
+                />
               </div>
               <span class="guests__comment"
                 >We had an amazing stay at the Guest House!</span
@@ -361,31 +358,31 @@
 
             <div class="guests__item" id="guests__item--2">
               <div class="guests__stars">
-                <object
-                  data="./src/icons/star.svg"
-                  type="image/svg+xml"
+                <img
+                  src="./src/icons/star.svg"
+                  alt="star icon"
                   class="guests__icon"
-                ></object>
-                <object
-                  data="./src/icons/star.svg"
-                  type="image/svg+xml"
+                />
+                <img
+                  src="./src/icons/star.svg"
+                  alt="star icon"
                   class="guests__icon"
-                ></object>
-                <object
-                  data="./src/icons/star.svg"
-                  type="image/svg+xml"
+                />
+                <img
+                  src="./src/icons/star.svg"
+                  alt="star icon"
                   class="guests__icon"
-                ></object>
-                <object
-                  data="./src/icons/star.svg"
-                  type="image/svg+xml"
+                />
+                <img
+                  src="./src/icons/star.svg"
+                  alt="star icon"
                   class="guests__icon"
-                ></object>
-                <object
-                  data="./src/icons/star white.svg"
-                  type="image/svg+xml"
+                />
+                <img
+                  src="./src/icons/star white.svg"
+                  alt="white-star icon"
                   class="guests__icon"
-                ></object>
+                />
               </div>
               <span class="guests__comment">Beautiful little hideaway.</span>
               <p class="guests__review">
@@ -400,31 +397,31 @@
 
             <div class="guests__item" id="guests__item--3">
               <div class="guests__stars">
-                <object
-                  data="./src/icons/star.svg"
-                  type="image/svg+xml"
+                <img
+                  src="./src/icons/star.svg"
+                  alt="star icon"
                   class="guests__icon"
-                ></object>
-                <object
-                  data="./src/icons/star.svg"
-                  type="image/svg+xml"
+                />
+                <img
+                  src="./src/icons/star.svg"
+                  alt="star icon"
                   class="guests__icon"
-                ></object>
-                <object
-                  data="./src/icons/star.svg"
-                  type="image/svg+xml"
+                />
+                <img
+                  src="./src/icons/star.svg"
+                  alt="star icon"
                   class="guests__icon"
-                ></object>
-                <object
-                  data="./src/icons/star.svg"
-                  type="image/svg+xml"
+                />
+                <img
+                  src="./src/icons/star.svg"
+                  alt="star icon"
                   class="guests__icon"
-                ></object>
-                <object
-                  data="./src/icons/star.svg"
-                  type="image/svg+xml"
+                />
+                <img
+                  src="./src/icons/star.svg"
+                  alt="star icon"
                   class="guests__icon"
-                ></object>
+                />
               </div>
               <span class="guests__comment">Best vacation ever!</span>
               <p class="guests__review">
@@ -454,47 +451,47 @@
           </div>
           <div class="invite__content">
             <div class="invite__item">
-              <object
-                data="./src/icons/wifi.svg"
-                type="image/svg+xml"
+              <img
+                src="./src/icons/wifi.svg"
+                alt="wifi icon"
                 class="invite__icon"
-              ></object>
+              />
               <span class="invite__span"
                 >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span
               >
             </div>
             <div class="invite__item">
-              <object
-                data="./src/icons/bread.svg"
-                type="image/svg+xml"
+              <img
+                src="./src/icons/bread.svg"
+                alt="bread icon"
                 class="invite__icon"
-              ></object>
+              />
               <span class="invite__span"
                 >Nullam scelerisque aliquam odio et faucibus.</span
               >
             </div>
             <div class="invite__item">
-              <object
-                data="./src/icons/hanger.svg"
-                type="image/svg+xml"
+              <img
+                src="./src/icons/hanger.svg"
+                alt="hanger icon"
                 class="invite__icon"
-              ></object>
+              />
               <span class="invite__span"
                 >Nulla rhoncus feugiat eros quis consectetur.</span
               >
             </div>
             <div class="invite__item">
-              <object
-                data="./src/icons/cutlery.svg"
-                type="image/svg+xml"
+              <img
+                src="./src/icons/cutlery.svg"
+                alt="cutlery icon"
                 class="invite__icon"
-              ></object>
+              />
               <span class="invite__span">Morbi neque ex, condimentum.</span>
             </div>
           </div>
         </div>
       </section>
-      <section class="booking">
+      <section class="booking" id="book">
         <div class="booking__container">
           <div class="booking__section">
             <div class="booking__block"></div>
@@ -521,49 +518,49 @@
             <span class="footer__span">Pages</span>
             <ul class="footer__list">
               <li class="footer__items">
-                <a href="" class="footer__link">Start</a>
+                <a href="#header" class="footer__link">Start</a>
               </li>
               <li class="footer__items">
-                <a href="" class="footer__link">Contact</a>
+                <a href="#book" class="footer__link">Contact</a>
               </li>
               <li class="footer__items">
-                <a href="" class="footer__link">Our history</a>
+                <a href="#history" class="footer__link">Our history</a>
               </li>
               <li class="footer__items">
-                <a href="" class="footer__link">Licenses</a>
+                <a href="#guests" class="footer__link">Licenses</a>
               </li>
               <li class="footer__items">
-                <a href="" class="footer__link">Instructions</a>
+                <a href="#arrangements" class="footer__link">Instructions</a>
               </li>
               <li class="footer__items">
-                <a href="" class="footer__link">Style guide</a>
+                <a href="#activities" class="footer__link">Style guide</a>
               </li>
             </ul>
           </nav>
           <div class="footer__social">
             <span class="footer__span">Social media</span>
             <div class="footer__group--icon">
-              <a href="" class="footer__link--social"
-                ><object
-                  data="./src/icons/meta.svg"
-                  type="image/svg+xml"
-                  class="footer__icon"
-                ></object
-              ></a>
               <a href="" class="footer__link--social">
-                <object
-                  data="./src/icons/facebook.svg"
-                  type="image/svg+xml"
+                <img
+                  src="./src/icons/meta.svg"
+                  alt="meta icon"
                   class="footer__icon"
-                ></object
-              ></a>
+                />
+              </a>
               <a href="" class="footer__link--social">
-                <object
-                  data="./src/icons/instagram.svg"
-                  type="image/svg+xml"
+                <img
+                  src="./src/icons/facebook.svg"
+                  alt="facebook icon"
                   class="footer__icon"
-                ></object
-              ></a>
+                />
+              </a>
+              <a href="" class="footer__link--social">
+                <img
+                  src="./src/icons/instagram.svg"
+                  alt="instagram icon"
+                  class="footer__icon"
+                />
+              </a>
             </div>
           </div>
           <div class="footer__letter">
