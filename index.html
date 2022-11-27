@@ -17,7 +17,7 @@
     <header class="header" id="header">
       <div class="wrapper">
         <div class="header__container">
-          <a href="" class="header__logo">
+          <a href="#" class="header__logo">
             <img
               src="./src/img/logo.png"
               alt="logo_guest-house"
@@ -309,15 +309,7 @@
           </div>
 
           <div class="guests__content">
-            <div class="guests__input">
-              <input
-                id="guests__btn--1"
-                type="radio"
-                name="guests__radio"
-                checked
-              />
-              <input id="guests__btn--2" type="radio" name="guests__radio" />
-            </div>
+            <div class="guests__input"></div>
             <div class="guests__item" id="guests__item--1">
               <div class="guests__stars">
                 <img
@@ -437,8 +429,8 @@
           </div>
 
           <div class="guests__select">
-            <label for="guests__btn--1" class="guests__label"></label>
-            <label for="guests__btn--2" class="guests__label"></label>
+            <div class="guests__btn guests__prev"></div>
+            <div class="guests__btn guests__next"></div>
           </div>
         </div>
       </section>
@@ -580,16 +572,19 @@
           </div>
         </div>
         <div class="footer__reserved">
-          <img
-            src="./src/img/logo.png"
-            alt="footer logo"
-            class="footer__logo"
-          />
+          <a href="#header" class="footer__link">
+            <img
+              src="./src/img/logo.png"
+              alt="footer logo"
+              class="footer__logo"
+            />
+          </a>
           <span class="footer__website--name">
             &#169; Guest House, LLC. All rights reserved.
           </span>
         </div>
       </div>
     </footer>
+    <script src="/js/script.js"></script>
   </body>
 </html>
