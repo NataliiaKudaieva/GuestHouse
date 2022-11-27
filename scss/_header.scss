@@ -23,16 +23,14 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -5px;
+      bottom: -10px;
       width: 0;
       height: 1.5px;
       background-color: $dull-orange;
+      transition: width 0.5s 0.2s;
     }
     &:hover:before {
       width: 100%;
-    }
-    &::before {
-      transition: width 0.5s;
     }
   }
 }
