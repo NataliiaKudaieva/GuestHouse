@@ -51,7 +51,7 @@
     transition: all ease 0.5s;
     position: relative;
     width: 33.333%;
-    animation: sliderGuests 15s ease;
+    // animation: sliderGuests 15s ease;
   }
 
   &__review {
@@ -78,7 +78,7 @@
     display: flex;
     align-self: flex-end;
   }
-  &__label {
+  &__btn {
     display: block;
     position: relative;
     margin-right: 5px;
@@ -93,21 +93,6 @@
     position: relative;
     display: none;
   }
-}
-
-#guests__btn--1,
-#guests__btn--2 {
-  opacity: 0;
-  left: 50%;
-  bottom: 50%;
-}
-
-#guests__btn--1:checked ~ #guests__item--1 {
-  margin-left: 0;
-}
-
-#guests__btn--2:checked ~ #guests__item--1 {
-  margin-left: -15%;
 }
 
 @keyframes sliderGuests {
@@ -136,6 +121,7 @@
     }
 
     &__header {
+      margin-top: 30px;
       padding: 30px 15px 5px 15px;
     }
     &__content {
@@ -156,7 +142,7 @@
       font-size: 16px;
     }
     &__block {
-      top: 18px;
+      top: 35px;
     }
     &__label {
       width: 50px;
