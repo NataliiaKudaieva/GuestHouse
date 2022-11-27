@@ -2,7 +2,7 @@
   background-color: $beige;
   &__block {
     position: absolute;
-    top: 20%;
+    top: 70px;
     left: 50%;
     @include orangeBlock;
   }
