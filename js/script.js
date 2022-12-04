@@ -12,12 +12,13 @@ function stopAnimation() {
 window.addEventListener("click", stopAnimation);
 
 next.addEventListener("click", () => {
-  guest1.style.transform = "translateX(0px)";
-  guest2.style.transform = "translateX(-70%)";
-  guest3.style.transform = "translateX(-50%)";
+  guest1.style.transform = "translateX(-10%)";
+  guest2.style.transform = "translateX(-80%)";
+  guest3.style.transform = "translateX(-80%)";
 });
 
 prev.addEventListener("click", () => {
-  guest2.style.transform = "translateX(0px)";
-  guest3.style.transform = "translateX(0px)";
+  guest1.style.transform = "translateX(30%)";
+  guest2.style.transform = "translateX(30%)";
+  guest3.style.transform = "translateX(100%)";
 });
